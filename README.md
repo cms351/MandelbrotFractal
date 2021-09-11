@@ -6,9 +6,10 @@ Instructions:
 Okay, you should just be able to pop this program into your IDE and run it. There is a few concerns though. 
 First, this program is super taxing on your computer - i.e. it's slow by the nature of what we're working 
 with. You're going to want to do everything you can to get it running as fast as possible. I don't know 
-your IDE, but I wrote this program on Visual Studio Code, so I can tell you what I did and maybe that'll
-help? Basically, all I did was set my "active solution platform" to x64 and my "active solution 
-configuration" to release. Google told me that's supposed to make it go faster, so that's what I did. 
+your IDE, and shoot you probably know what to do better than me, but I might as well tell you what I 
+did. I wrote this program on Visual Studio Code. Basically, all I did was set my "active solution 
+platform" to x64 and my "active solution configuration" to release. Google told me that's supposed to 
+make it go faster, so that's what I did. 
 
 The other problem you might have is that "#include <SDL.h>" bit. You need to make sure you have access
 to that file. First you want to libsdl.org, go to the download section, click SDL Releases then click 
