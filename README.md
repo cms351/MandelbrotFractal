@@ -13,7 +13,7 @@ make it go faster, so that's what I did.
 
 The other problem you might have is that "#include <SDL.h>" bit. You need to make sure you have access
 to that file. First you want to libsdl.org, go to the download section, click SDL Releases then click 
-on SDL 2.0. Download *development library*...now this step might be different for you, but since I was 
+on SDL 2.0. Download from the *development library*...now this step might be different for you, but since I was 
 on Visual Studio I downloaded the "SDL2-devel-2.0.16-VC.zip" file. You might need the other one. Anyway, 
 download it, save it somewhere. Now you gotta make sure the program has access to that SDL.h file in the 
 folder. In Visual Studio Code, you just go up to project properties, hit VC++ Directories, and add the folder to 
