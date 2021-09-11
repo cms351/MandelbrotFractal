@@ -11,7 +11,6 @@ int MAX_ITERATIONS = 100;
 
 long double map(long double value, long double inputMin, long double inputMax, long double outputMin, long double outputMax) {
 	// (x - input minimum) * 'output range' / 'input range' + output minimum
-	// got this equation from the internet not gonna lie. 
 	return (value - inputMin) * (outputMax - outputMin) / (inputMax - inputMin) + outputMin; 
 }
 
@@ -54,7 +53,7 @@ int main(int argc, char* argv[]) {
 		// c is x + yi. y is the y coordinate on the screen, i is the square root of negative one. x is the x coordinate on the screen. 
 
 		// c is a bit annoying to work with because inherently, since i is the square root of negative one, it would cause an computational error if we
-		// just tried to throw that equation into the computer. Instead we use (x + yi)^2. (x + yi)(x + yi) = x^2 + 2xyi + i^2. Simplify to 
+		// just tried to throw that equation into the computer. Instead we use (x + yi)^2. (x + yi)(x + yi) = x^2 + 2xyi + yi^2. Simplify to 
 		// x^2 + 2xyi + y^2(-1). Simplify that to x^2 + 2xyi - y^2. At first I thought this wasn't much better, but i is actually much easier to 
 		// *simulate* in this equation. 
 
@@ -78,7 +77,6 @@ int main(int argc, char* argv[]) {
 
 				// initialization
 				int counter = 0; 
-
 				for (int i = 0; i < MAX_ITERATIONS; i++) {
 
 					long double pt1 = a * a - b * b; // effectively x^2 - y^2
