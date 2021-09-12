@@ -18,5 +18,4 @@ on Visual Studio I downloaded the "SDL2-devel-2.0.16-VC.zip" file. You might nee
 download it, save it somewhere. Now you gotta make sure the program has access to that SDL.h file in the 
 folder. In Visual Studio Code, you just go up to project properties, hit VC++ Directories, and add the folder to 
 your "Include Directories". If you're not in VSCode, not gonna lie, not sure what exactly what you need to 
-do, but I have faith you'll figure it out. If you're reading this, you're probably an employer or something
-and know way more than me anyway. I think the code is pretty good though!
+do, but I have faith you'll figure it out.
